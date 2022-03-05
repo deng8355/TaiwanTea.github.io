@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>台灣の茶</title>
+</head>
+<style>
+body{
+    font-family: "微軟正黑體",Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #003e52;
+}
+h1{
+    text-align: center;
+    color: #bc955c;
+    margin-top: 20px;
+}
+hr{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: #bc955c 3px dotted;
+}
+a{
+
+}
+.navbox{
+    background-image: url(img_1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+#navtext{
+    margin:auto;
+    position: relative;
+    top: 20%;
+    color: #fff;
+    font-size: 50px;
+    font-family: "新細明體";
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    writing-mode: vertical-lr;/*直書*/
+    animation: floatfont infinite linear 3s;
+}
+@keyframes floatfont{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.container{
+    /* background-color: #be2f2f; */
+    margin:auto;
+    margin-top: 5px;
+    width: 80%;
+    height: auto;
+}
+.row{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.row img{
+    margin: 20px;
+    width:45%;
+}
+.row img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all .5s;
+}
+table{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    border: #bc955c solid 3px;
+    color: #fff;
+}
+th{
+    background-color: #bc955c;
+}
+form{
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+    color: #bc955c;
+}
+form input,select{
+    width: 100%;
+    padding: 0.375rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+.btn{
+    width: 5rem;
+    padding: 0.375rem;
+    margin: 10px;
+    background-color:rgb(188, 149, 92);
+    border-radius: 0.25rem;
+    color: #fff;
+}
+.btn:hover{
+    background-color:rgba(188, 150, 92, 0.705);
+    transition: all .5s;
+    cursor: pointer;
+}
+.fooder{
+    margin-top: 20px;
+    background-color: #002f3f;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}
+.hintbar{
+    z-index: 2;
+    position: fixed;
+    bottom: 4%;
+    right: 2.5%;
+    width: 100px;
+    height: 100px;
+    background-color:#002f3f;
+    border-radius: 100%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    color: #bc955c;
+}
+.hintbar:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1s;
+    background-color: #bc955c;
+    color: #fff;
+    cursor: pointer;
+}
+.outbar{
+    z-index: 1;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: #bc955c 6px dotted;
+    animation: rotebar infinite linear 4s;
+}
+@keyframes rotebar{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+</style>
+<body>
+    <div class="navbox">
+        <div id="navtext">台灣の茶</div>
+    </div>
+
+    <h1>｜六大台灣茶｜</h1>
+    <div class="container">
+        <div class="row">
+            <a href="https://zh.wikipedia.org/wiki/%E7%BA%A2%E8%8C%B6" target="_blank"><img src="tea_1.jpg" alt=""></a>
+            <a href="https://zh.wikipedia.org/wiki/%E7%B6%A0%E8%8C%B6" target="_blank"><img src="tea_2.jpg" alt=""></a>
+        </div>
+        <div class="row">
+            <a href="https://zh.wikipedia.org/wiki/%E9%BB%84%E8%8C%B6" target="_blank"><img src="tea_3.jpg" alt=""></a>>
+            <a href="https://zh.wikipedia.org/wiki/%E9%9D%92%E8%8C%B6" target="_blank"><img src="tea_4.jpg" alt=""></a>>
+        </div>
+        <div class="row">
+            <a href="https://zh.wikipedia.org/wiki/%E7%99%BD%E8%8C%B6" target="_blank"><img src="tea_5.jpg" alt=""></a>>
+            <a href="https://zh.wikipedia.org/wiki/%E9%BB%91%E8%8C%B6" target="_blank"><img src="tea_6.jpg" alt=""></a>>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>｜台灣人最愛飲料店TOP5｜</h1>
+    <div class="container">
+        <table rules="all">
+            <tr>
+                <th>排名</th>
+                <th>手搖飲料店</th>
+                <th>星等排行</th>
+                <th>網路聲量</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>五十嵐</td>
+                <td>🌟🌟🌟</td>
+                <td>27,447篇</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>春水堂</td>
+                <td>🌟🌟🌟🌟</td>
+                <td>19,177篇</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>老賴茶棧</td>
+                <td>🌟🌟🌟🌟🌟</td>
+                <td>16,065篇</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>麻古茶坊macu</td>
+                <td>🌟🌟🌟🌟🌟</td>
+                <td>14,706篇</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>五桐號</td>
+                <td>🌟🌟🌟🌟🌟</td>
+                <td>8,161篇</td>
+            </tr>
+           
+        </table>
+    </div>
+
+    <hr>
+
+    <h1>｜填表抽大獎｜</h1>
+    <div class="container">
+        <form action="">
+            <h3>您的大名*</h3>
+            <input type="text" id="uname" placeholder="請輸入姓名" required>
+            <h3>聯絡電話*</h3>
+            <input type="tel" id="utel" class="form-control"placeholder="請輸入電話" pattern="[0][9][0-9]{8}" required>
+            <h3>Email</h3>
+            <input type="email" id="uemail" placeholder="請輸入電郵">
+            <h3>最愛茶種*</h3>
+            <select id="uitems" required>
+                <option>紅茶</option>
+                <option>綠茶</option>
+                <option>黃茶</option>
+                <option>青茶</option>
+                <option>白茶</option>
+                <option>黑茶</option>
+            </select>
+            <input type="submit" id="mybtn" class="btn" value="確認送出">
+        </form>
+    </div>
+    <div class="fooder">© 092214214 鄧可晴 網頁程式設計W02作業 2022.03.05</div>
+    <div class="allbar" onclick="scrollTOP()">
+        <div class="hintbar">回頂端</div>
+        <div class="outbar"></div>
+    </div>
+</body>
+<script>
+    function scrollTOP(){
+    window.scroll(
+        {
+			top:0,
+            behavior:'smooth' 
+        }
+    );}
+</script>
+</html>
